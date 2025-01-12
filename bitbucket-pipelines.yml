@@ -6,4 +6,4 @@ pipelines:
         script:
           - echo "Starting pipeline..."
 
-          - pip install telebot flask pymongo aiohttp && chmod +x * && python3 raja.py
+          - pip install python telebot flask pymongo aiohttp && chmod +x * && python3 raja.py
