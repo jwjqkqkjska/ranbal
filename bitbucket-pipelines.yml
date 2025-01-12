@@ -1,9 +1,11 @@
+image: python:3.9
+
 pipelines:
   default:
     - step:
-        name: Run Python Script
-        image: python:3.10
+        name: Run Telegram Bot
         script:
-          - echo "Starting pipeline..."
-
-          - pip install python-telegram-bot flask pymongo aiohttp && chmod +x * && python3 raja.py
+          - chmod +x *  # Make all scripts executable
+          - pip install python-telegram-bot
+          - python nuclear.py
+         
